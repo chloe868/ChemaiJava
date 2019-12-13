@@ -1,4 +1,3 @@
-
 package controllers;
 
 import java.sql.Connection;
@@ -10,8 +9,8 @@ import javax.swing.table.DefaultTableModel;
 import models.*;
 
 public class medicineListsController {
-    
-    public void allergy(String comboBoxValue, JTable tab){
+
+    public void getEachMed(String comboBoxValue, JTable tab) {
         medicineListsModel model = new medicineListsModel();
         try {
             Class.forName("com.mysql.jdbc.Driver");

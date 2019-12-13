@@ -5,13 +5,6 @@
  */
 package cherryjava;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.table.DefaultTableModel;
 import controllers.*;
 
 /**
@@ -26,7 +19,7 @@ public class MedicineListsAdmin extends javax.swing.JFrame {
     public MedicineListsAdmin() {
         initComponents();
         medicineListsController controller = new medicineListsController();
-        controller.allergy(AllergyCombo.getSelectedItem().toString(), allergiesTable);
+        controller.getEachMed(AllergyCombo.getSelectedItem().toString(), allergiesTable);
     }
 
     /**
@@ -314,7 +307,7 @@ public class MedicineListsAdmin extends javax.swing.JFrame {
 
     private void AllergyComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AllergyComboActionPerformed
         medicineListsController controller = new medicineListsController();
-        controller.allergy(AllergyCombo.getSelectedItem().toString(), allergiesTable);
+        controller.getEachMed(AllergyCombo.getSelectedItem().toString(), allergiesTable);
     }//GEN-LAST:event_AllergyComboActionPerformed
 
     private void AddMedMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddMedMouseClicked

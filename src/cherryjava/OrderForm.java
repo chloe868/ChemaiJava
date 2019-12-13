@@ -5,14 +5,6 @@
  */
 package cherryjava;
 
-import static java.lang.Integer.parseInt;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.JOptionPane;
 import controllers.*;
 
 /**
@@ -21,7 +13,6 @@ import controllers.*;
  */
 public class OrderForm extends javax.swing.JFrame {
 
-    List med = new ArrayList();
 
     /**
      * Creates new form Register

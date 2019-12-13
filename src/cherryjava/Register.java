@@ -5,12 +5,6 @@
  */
 package cherryjava;
 
-import static java.lang.Integer.parseInt;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import javax.swing.JOptionPane;
 import controllers.*;
 
 /**
@@ -264,7 +258,8 @@ public class Register extends javax.swing.JFrame {
 
     private void RegisterButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterButtonMouseClicked
         usersController user = new usersController();
-        user.register(UsernameTF.getText(), PasswordFieldReg.getText(), ConPasswordFieldReg.getText(), NameTF.getText(), AgeTF.getText());        boolean canlogin = true;
+        user.register(UsernameTF.getText(), PasswordFieldReg.getText(), ConPasswordFieldReg.getText(), NameTF.getText(), AgeTF.getText());   
+        
     }//GEN-LAST:event_RegisterButtonMouseClicked
 
     private void LoginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginButtonMouseClicked
